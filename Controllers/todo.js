@@ -100,7 +100,7 @@ export async function deleteTask(req, res) {
     }
 
     try {
-        const task = await todoModel.findById(req.param.id);
+        const task = await todoModel.findById(req.params.id);
 
         if (!task) {
             return res.status(404).json({

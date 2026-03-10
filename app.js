@@ -1,5 +1,5 @@
 import express from "express";
-import { connectToDb } from "./config/connectToDb.js";
+import { connectToDb } from "./Config/connectToDb.js"
 import todoRouter from "./routers/todo.js";
 
 const app = express();
