@@ -43,7 +43,7 @@ export async function createTask(req, res) {
         res.status(201).json({
             status: "success",
             message: "Task created successfully",
-            task,
+            data: task,
         });
     } catch (error) {
         console.log("error-creating-task", error);
