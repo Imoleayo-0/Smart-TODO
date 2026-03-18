@@ -17,7 +17,7 @@ connectToDb();
 // });
 
 app.get("/", (req, res) => {
-  res.send("Hello at todo app!!");
+  res.send("Hello at todo app!!, and of course API is working...");
 });
 app.use("/api/todo", todoRouter);
 
